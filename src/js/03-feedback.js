@@ -25,7 +25,7 @@ localStorage.removeItem('STORAGE_KEY');
 
 
 function onTextareaInput(evt){
-    const message = evt.currentTarget.value;
+    const message = evt.target.value;
     console.log(message);
     localStorage.setItem('STORAGE_KEY', message);
 };
