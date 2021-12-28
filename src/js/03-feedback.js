@@ -3,12 +3,14 @@ import throttle from "lodash.throttle";
 // const throttle = require('lodash.throttle');
 const STORAGE_KEY ='fedback-msg';
 const formData={};
+
 const refs = {
     form: document.querySelector('.feedback-form'),
     textarea: document.querySelector('.feedback-form textarea'),
    input: document.querySelector('input', e=>{
     //    console.log(e.target);
     formData[e.target.name]= e.target.value;
+    
 });
 
 };
@@ -41,11 +43,3 @@ function populateTextarea(){
         refs.textarea.value=savedMessage;
     }
 };
-
-input: document.querySelector('input', e=>{
-    //    console.log(e.target);
-    formData[e.target.name]= e.target.value;
-    JSON.stringify(formData);
-    
-    parse 
-});
