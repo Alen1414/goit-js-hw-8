@@ -8,8 +8,8 @@ const refs = {
     form: document.querySelector('.feedback-form'),
     textarea: document.querySelector('.feedback-form textarea'),
    input: document.querySelector('input', e=>{
-    //    console.log(e.target);
-    formData[e.target.name]= e.target.value;
+       console.log(e.target);
+    // formData[e.target.name]= e.target.value;
     
 });
 
